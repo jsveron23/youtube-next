@@ -1,0 +1,14 @@
+{
+  "name": "Youtube next",
+  "version": "0.1",
+  "description": "Current Youtube video will pause automatically when start playing another one on same page",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["inject.js"]
+  }],
+  "web_accessible_resources": ["main.js"]
+}
